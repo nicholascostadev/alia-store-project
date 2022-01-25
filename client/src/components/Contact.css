@@ -1,0 +1,67 @@
+#contact {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #eaeded;
+}
+
+.contact-title {
+	font-size: 4rem;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	margin-top: 5%;
+}
+
+.email-input {
+	border: 1px solid rgb(134, 134, 134);
+	border-radius: 5px;
+	background-color: transparent;
+	padding: 0.5rem 4rem 0.5rem 0.2rem;
+	margin-bottom: 1rem;
+	font-size: 1rem;
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.content-textarea {
+	border-radius: 5px;
+	border: 1px solid rgb(134, 134, 134);
+	background-color: transparent;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	padding: 0.5rem 0 0 0.2rem;
+}
+
+.contact-send {
+	border: 1px solid rgb(150, 252, 254);
+	border-radius: 5px;
+	padding: 0.75rem 2rem;
+	transition: 0.25s ease;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 1.25rem;
+	text-shadow: -1px -1px white;
+}
+
+.contact-send:hover {
+	background-color: rgb(150, 252, 254);
+	text-shadow: 1px 1px #ddd;
+	color: white;
+}
+
+label {
+	font-size: 1.25rem;
+	padding-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 425px) {
+	.contact-form {
+		max-width: 80%;
+	}
+}

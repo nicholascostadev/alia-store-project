@@ -1,0 +1,65 @@
+.hero {
+	background-image: url('../images/Hero.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.hero-button {
+	margin-bottom: 10rem;
+	border: 0;
+	padding: 0.5rem 0 0.5rem;
+	border-radius: 0.35rem;
+	border: 1px solid rgba(150, 252, 254, 90%);
+	background-color: rgba(0, 0, 0, 0%);
+	transition: 0.15s ease;
+}
+
+.hero-button:hover {
+	border: 1px solid rgba(0, 0, 0, 5%);
+	background-color: rgba(150, 252, 254, 90%);
+}
+
+.hero-button:hover a {
+	color: white;
+}
+.hero-button-text {
+	padding: 0.5rem 1.5rem;
+	font-size: 2rem;
+	font-weight: 400;
+	text-decoration: none;
+	color: rgb(27, 27, 27);
+}
+
+.hero h1 {
+	color: white;
+	font-size: 4rem;
+	font-weight: 400;
+	text-shadow: -1px 1px rgba(0, 0, 0, 65%);
+	margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 375px) {
+	.hero h1 {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.hero h1 {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.hero h1 {
+		font-size: 3rem;
+	}
+}

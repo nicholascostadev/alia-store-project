@@ -1,0 +1,32 @@
+.footer {
+	background-color: rgba(150, 252, 254);
+	height: 5rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+	border-top: 2px solid rgba(221, 221, 221, 0.5);
+}
+
+.copyright::before {
+	content: '©';
+}
+
+.instagram-logo-footer {
+	color: #0d0d0d;
+}
+
+.instagram-link {
+	display: flex;
+	align-items: center;
+}
+
+.footer > ul li {
+	padding: 0 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #0d0d0d;
+}

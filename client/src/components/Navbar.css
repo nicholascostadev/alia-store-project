@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+nav {
+	background: rgba(0, 0, 0, 0.25);
+	position: sticky;
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	transition: 0.3s;
+}
+
+nav div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20% 0;
+}
+
+.brand-img {
+	width: 10rem;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+}
+
+.nav-item {
+	color: rgb(27, 27, 27);
+	text-decoration: none;
+	padding: 0 1rem;
+	font-size: 1.2rem;
+	color: white;
+}
+
+.hide {
+	transform: translateY(-200px);
+}
+
+@media screen and (max-width: 425px) {
+	nav div {
+		justify-content: center;
+	}
+
+	.nav-items {
+		display: none;
+	}
+}
