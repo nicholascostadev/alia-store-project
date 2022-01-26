@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import './Contact.css';
-import { db } from './firebase';
+import { db } from '../firebase';
 
 function Contact() {
 	const [email, setEmail] = useState('');

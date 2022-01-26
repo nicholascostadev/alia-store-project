@@ -1,5 +1,5 @@
 import './Navbar.css';
-import brand from '../images/Brand.png';
+import brand from '../../images/Brand.png';
 
 const Navbar = () => {
 	let lastScrollTop = 0;

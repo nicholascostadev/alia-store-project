@@ -1,6 +1,6 @@
 import './About.css';
 import Person from '@material-ui/icons/Person';
-import aboutImage from '../images/About.jpg';
+import aboutImage from '../../images/About.jpg';
 
 const About = () => {
 	return (
