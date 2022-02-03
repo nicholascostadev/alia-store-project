@@ -1,56 +1,54 @@
 import React from 'react';
-import { useState } from 'react';
 import './Contact.css';
-import { db } from '../firebase';
 
 function Contact() {
-	const [email, setEmail] = useState('');
-	const [message, setMessage] = useState('');
-
-	const handleSubmit = e => {
-		e.preventDefault();
-
-		db.collection('contacts')
-			.add({
-				email: email,
-				message: message,
-			})
-			.then(() => {
-				alert('Message has been submitted');
-			})
-			.catch(error => {
-				alert(error.message);
-			});
-
-		setEmail('');
-		setMessage('');
-	};
-
 	return (
 		<div id="contact">
 			<h1 className="contact-title">Contact Us</h1>
-			<form className="contact-form" onSubmit={handleSubmit}>
+			<form
+				method="POST"
+				className="contact-form"
+				action="https://formsubmit.co/nicholascostadev@gmail.com"
+			>
+				<label>Name</label>
+				<input
+					className="email-input"
+					type="name"
+					name="name"
+					placeholder="Your Name"
+					required
+				/>
 				<label>Email</label>
 				<input
 					className="email-input"
 					type="email"
 					name="email"
 					placeholder="email@example.com"
-					value={email}
-					onChange={e => setEmail(e.target.value)}
+					required
 				/>
 				<label>Message</label>
 				<textarea
 					className="content-textarea"
-					name="content"
-					id=""
+					name="message"
 					cols="50"
 					rows="15"
 					placeholder="Message"
-					value={message}
-					onChange={e => setMessage(e.target.value)}
+					required
 				></textarea>
-				<button className="contact-send">Send</button>
+				<input type="hidden" name="_template" value="table" />
+				<input
+					type="hidden"
+					name="_next"
+					value="https://alia-store-project.netlify.app/thankyou"
+				/>
+				<input
+					type="hidden"
+					name="_autoresponse"
+					value="Your email has been sent"
+				/>
+				<button className="contact-send" type="submit">
+					Send
+				</button>
 			</form>
 		</div>
 	);
