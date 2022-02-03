@@ -8,7 +8,7 @@ function Contact() {
 			<form
 				method="POST"
 				className="contact-form"
-				action="https://formsubmit.co/nicholascostadev@gmail.com"
+				action="https://formsubmit.co/5460be9e382f4c5d28b1e32172393222"
 			>
 				<label>Name</label>
 				<input
